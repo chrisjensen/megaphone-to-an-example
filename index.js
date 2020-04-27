@@ -3,25 +3,19 @@ const request = require('request-promise-native');
 /**
  * This is an example cloud function
  * You can modify this funciton and use it with Google Cloud Functions
- * to catch and process Raisely Webhooks
- *
- * When configuing the cloud function you will need to set the two environment
- * variables below (WEBHOOK_SECRET and API_KEY) (DO NOT save such values to git
- * or other source control)
+ * to catch and process Megaphone Webhooks
  *
  */
 
-// Insert here a shared secret to use when configuring your webhook with raisely
-// Set the same value when setting up the webhook in
-// Raisely Admin -> Campaign -> Settings -> API & Webhooks
+// TODO Check if Megaphone supports some kind of shared secret to authenticate the
+// webhook requests
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
 
-// Secret key to access the campaign, can be found in
-// Raisely Admin -> Campaign -> Settings -> API & Webhooks
 const ACTION_NETWORK_KEY = process.env.ACTION_NETWORK_KEY;
 
 /**
- * Example Cloud Function that catches webhooks from Raisely
+ * Example Cloud Function that catches webhooks from Megaphone
+ * for updating Action Network
  *
  * @param {!Object} req Cloud Function request context.
  * @param {!Object} res Cloud Function response context.
