@@ -7,9 +7,9 @@ It currently does not work, but has a test suite that should pass when it's work
 
 # Structure
 
-* index.js - Defines the cloud function
-* index.test.js - Defines the tests for the function (using [MochaJS](https://mochajs.org/))
-* .env.EXAMPLE - Defines example settings for environment variables, copy it to a file called `.env` to run the tests
+* [index.js](./index.js) - Defines the cloud function
+* [index.test.js](./index.test.js) - Defines the tests for the function (using [MochaJS](https://mochajs.org/))
+* [.env.EXAMPLE](./.env.EXAMPLE) - Defines example settings for environment variables, copy it to a file called `.env` to run the tests
 
 # Getting it Working
 
